@@ -24,38 +24,39 @@ void test01()
 
 int main()
 {
-	test01();
-	//WorkerManager wm;
-	//int choice;
-	//while (true)
-	//{
-	//	wm.ShowMenu();
-	//	cout << "请输入你的操作：" << endl;
-	//	cin >> choice;
-	//	switch (choice)
-	//	{
-	//	case 0: // 退出系统
-	//		wm.ExitSystem();
-	//		break;
-	//	case 1: // 添加职工
-	//		break;
-	//	case 2: // 显示职工
-	//		break;
-	//	case 3: // 删除职工
-	//		break;
-	//	case 4: // 修改职工
-	//		break;
-	//	case 5: // 查找职工
-	//		break;
-	//	case 6: // 排序职工
-	//		break;
-	//	case 7: // 清空文件
-	//		break;
-	//	default:
-	//		system("cls");
-	//		break;
-	//	}
-	//}
+	//test01();
+	WorkerManager wm;
+	int choice;
+	while (true)
+	{
+		wm.ShowMenu();
+		cout << "请输入你的操作：" << endl;
+		cin >> choice;
+		switch (choice)
+		{
+		case 0: // 退出系统
+			wm.ExitSystem();
+			break;
+		case 1: // 添加职工
+			wm.Add_Emp();
+			break;
+		case 2: // 显示职工
+			break;
+		case 3: // 删除职工
+			break;
+		case 4: // 修改职工
+			break;
+		case 5: // 查找职工
+			break;
+		case 6: // 排序职工
+			break;
+		case 7: // 清空文件
+			break;
+		default:
+			system("cls");
+			break;
+		}
+	}
 	system("pause");
 	return 0;
 }
